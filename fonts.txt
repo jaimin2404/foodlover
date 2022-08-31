@@ -1,0 +1,6 @@
+font-family: 'Cinzel', serif;
+font-family: 'Dancing Script', cursive;
+font-family: 'Grenze Gotisch', cursive;
+font-family: 'Oswald', sans-serif;
+font-family: 'Roboto Mono', monospace;
+font-family: 'Rokkitt', serif;

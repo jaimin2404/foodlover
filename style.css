@@ -1,0 +1,775 @@
+@import url('https://fonts.googleapis.com/css2?family=Cinzel&family=Dancing+Script&family=Grenze+Gotisch&family=Oswald&family=Roboto+Mono&family=Rokkitt&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto Mono', monospace;
+    text-decoration: none;
+    box-sizing: border-box;
+}
+header .header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0.5rem 1rem;
+}
+header .header .logo{
+    font-size: 20px;
+    color: crimson;
+    font-weight: 700;
+}
+header .header .call{
+    font-size: 18px;
+    color: #666;
+}
+header nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    position: relative;
+    z-index: 1000;
+    background: orangered;
+}
+header nav #menu{
+    font-size: 28px;
+    margin: 10px;
+    color: white;
+    cursor: pointer;
+    display: none;
+}
+header nav.header-active{
+    position: fixed;
+    top: 0;
+    left: 0;
+    box-shadow: 0 0.1rem 0.3rem rgba(0,0,0,0.3);
+    z-index: 1;
+}
+header nav .navbar ul{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    list-style: none;
+}
+header nav .navbar ul li{
+    margin: 1rem;
+}
+header nav .navbar ul li a{
+    font-size: 20px;
+    font-weight: 600;
+    color: white;
+    transition: all 0.4s ease;
+}
+header nav .navbar ul li a.active,
+header nav .navbar ul li a:hover{
+    color: orange;
+}
+header nav .share a{
+    font-size: 18px;
+    color: white;
+    margin-right: 20px;
+    transition: all 0.4s ease;
+}
+header nav .share a:hover{
+    color: orange;
+}
+/* home section  */
+.home{
+    display:  flex;
+    align-items: center;
+    justify-content: center;
+    background-image: linear-gradient(rgba(4,9,30,0.8),rgba(4,9,30,0.8)),url(images/bg.png);
+    background-size: cover;
+    height: 90vh;
+    margin: auto;
+    top: 0;
+    left: 0;
+    color: white;
+    position: relative;
+}
+.home .container{
+    text-align: center;
+    padding: 1rem;
+}
+.home .container .title{
+    font-size: 40px;
+    font-weight: 700;
+    padding-bottom: 10px;
+    font-family: 'Dancing Script', cursive;
+}
+.home .container .title span{
+    color: crimson;
+    font-size: 40px;
+    font-weight: 800;
+    font-family: 'Dancing Script', cursive;
+}
+.home .container p{
+    font-size: 19px;
+    padding: 0 80px 30px 80px;
+    text-align: justify;
+    font-family: 'Cinzel', serif;
+}
+.btn{
+    text-decoration: none;
+    font-size: 25px;
+    color: white;
+    background: none;
+    border: 3px solid white;
+    outline: 3px solid white;
+    outline-offset: 5px;
+    font-family: 'Rokkitt', serif;
+    padding: 5px;
+    transition: all 0.5s ease;
+}
+.btn:hover{
+    outline-offset: 0.4rem;
+    background: crimson;
+    font-weight: bolder;
+}
+.about{
+    padding: 100px 0 50px 0;
+    font-family: 'Roboto Mono', monospace;
+}
+.about .title{
+    align-items: center;
+    text-align: center;
+    font-size: 35px;
+    font-family: 'Oswald', sans-serif;
+    color: orangered;
+    padding: 0 .5rem;
+    padding-top: 6rem;
+    width: 90%;
+    box-shadow: 0 .2rem .02rem rgba(0,0,0,0.3);
+    margin: 0 auto;
+}
+.about .title span{
+    color: orangered;
+    box-shadow: 0 .2rem .02rem orangered;
+}
+.about .container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+.about .container .about-container{
+    width: calc(50% - 20px);
+}
+.about .container .about-container h3{
+    font-size: 30px;
+    font-family: 'Grenze Gotisch', cursive;
+    padding-bottom: 20px;
+    color: crimson;
+}
+.about .container .about-container p{
+    font-size: 18px;
+    font-family: 'Roboto Mono', monospace;
+    padding: 0 10px 10px 0;
+    text-align: justify;
+}
+.learn{
+    margin-top: 20px;
+}
+.about .container .about-container a{
+    border-color: black;
+    outline-color: black;
+    background-color: crimson;
+}
+.about .container .about-container a:hover{
+    background-color:orangered;
+    color:black;
+    border-color: crimson;
+    outline-color: crimson;
+}
+.about .container img{
+    height: 400px;
+    width: 450px;
+    object-fit: cover;
+    border-radius: 10px;
+    margin: 20px;
+    box-shadow: 7px 10px 10px #444;
+}
+/* dish section  */
+.dish{
+    background-color: #222;
+    padding: 100px 0 50px 0;
+    color: #fff;
+    min-height: 100vh;
+}
+.dish .title{
+    align-items: center;
+    text-align: center;
+    font-size: 35px;
+    font-family: 'Oswald', sans-serif;
+    padding: 0 .5rem;
+    padding-top: 6rem;
+    width: 90%;
+    box-shadow: 0 .2rem .02rem rgba(0,0,0,0.3);
+    margin: 0 auto;
+}
+.dish .title span{
+    color: orangered;
+    box-shadow: 0 .2rem .02rem orangered;
+}
+.dish .container{
+    display: flex;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    list-style: none;
+    flex-wrap: wrap;
+    padding: 2rem 0;
+}
+.dish .container .buttons{
+    margin: 1rem 2rem;
+    padding: 0.5rem 0;
+    cursor: pointer;
+    border-bottom: 2px solid #fff;
+    font-size: 17px;
+    transition: all 0.3s ease;
+}
+.dish .container .buttons.button-active,
+.dish .container .buttons:hover{
+    color: crimson;
+    border-color: crimson;
+}
+.dish .image-container{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    padding-bottom: 2rem;
+}
+.dish .image-container .image{
+    display: flex;
+    flex-direction: column;
+    margin: 2rem 3rem;
+    border: 15px solid #333;
+    box-shadow: 0 0.5rem 0.5rem rgba(255,255,255,0.3);
+    cursor: pointer;
+    transition: all 0.5s ease;
+}
+.dish .image-container .image img{
+    height: 300px;
+    width: 350px;
+    object-fit: cover;
+}
+.dish .image-container .image a{
+    font-size: 18px;
+    color: #fff;
+    text-align: center;
+    margin: 20px;
+}
+.dish .image-container .image:hover{
+    transform: scale(1.03);
+    border-color: crimson;
+    background-color: crimson;
+}
+.dish .image-container .image:hover a{
+    color: #111;
+    font-size: 20px;
+    font-weight: 800;
+}
+/* shef section  */
+
+.chef{
+    min-height: 100vh;
+}
+.chef .title{
+    align-items: center;
+    text-align: center;
+    font-size: 35px;
+    font-family: 'Oswald', sans-serif;
+    padding: 0 2rem;
+    padding-top: 6rem;
+    width: 90%;
+    box-shadow: 0 .2rem .02rem rgba(0,0,0,0.3);
+    margin: 0 auto;
+}
+.chef .title span{
+    color: orangered;
+    box-shadow: 0 .2rem .02rem orangered;
+}
+.chef .container{
+    margin-top: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+}
+.chef .box{
+    margin: 2rem;
+    border: 0.4rem solid crimson;
+    box-shadow: 0 0.5rem 1rem rgba(0,0,0,0.3);
+    position: relative;
+    transition: all 0.5s ease;
+    cursor: pointer;
+}
+.chef .box:hover{
+    transform: scale(1.03);
+}
+.chef .container .box img{
+    height: 300px ;
+    width: 250px;
+    object-fit: cover;
+}
+.chef .container .box .info{
+    width: 100%;
+    text-align: center;
+    border-top: 0.4rem solid crimson;
+}
+.chef .container .box .info h3{
+    font-size: 30px;
+    font-weight: 800;
+    color: #333;
+    font-family: 'Rokkitt', serif;
+}
+.chef .container .box .info span{
+    font-size: 19px;
+    color: #666;
+}
+.chef .container .box .info .share{
+    margin-top: 1rem;
+    border-top: 0.1rem solid rgba(0,0,0,0.3);
+    padding: 1rem 0;
+}
+.chef .container .box .info .share a{
+    font-size: 1.2rem ;
+    color: orangered;
+    margin: 1rem ;
+    transition: all 0.4s ease;
+}
+.chef .container .box .info .share a:hover{
+    color: #333;
+}
+.speciality{
+    background-color: #222;
+    padding: 100px 0 50px 0;
+}
+.speciality .title{
+    align-items: center;
+    text-align: center;
+    font-size: 35px;
+    font-family: 'Oswald', sans-serif;
+    padding: 0 2rem;
+    padding-top: 6rem;
+    width: 90%;
+    box-shadow: 0 .2rem .02rem rgba(0,0,0,0.3);
+    margin: 0 auto 40px auto;
+}
+.speciality .title span{
+    color: orangered;
+    box-shadow: 0 .2rem .02rem orangered;
+}
+.speciality .container{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+}
+.speciality .container .box{
+    height: 250px;
+    flex:1 1 30rem;
+    margin: 1rem;
+    box-shadow: 0 10px 10px rgba(255,255,255,0.3);
+    overflow: hidden;
+    border-radius: 10px;
+    position: relative;
+    cursor: pointer;
+    transition: all 0.4s ease;
+}
+.speciality .container .box:hover{
+    transform: scale(1.03);
+}
+.speciality .container .box img{
+    height: 250px;
+    width: 100%;
+    object-fit: cover;
+    opacity: 0.3;
+}
+.speciality .container .box .info{
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    left: 3%;
+}
+.speciality .container .box .info h3{
+    font-size: 30px;
+    color: white;
+    padding-bottom: 10px;
+}
+.speciality .container .box .info p{
+    font-size: 23px;
+    color: #fff;
+    padding-bottom: 20px;
+}
+.speciality .container .box .info .btn{
+    cursor: pointer;
+}
+.speciality .icon-container{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    margin-top: 2rem;
+}
+.speciality .icon-container .icon{
+    margin: 2rem 1rem;
+    width: 29rem;
+    text-align: center;
+}
+.speciality .icon-container .icon i{
+    font-size: 2.5rem;
+    color: orangered;
+}
+.speciality .icon-container .icon h3{
+    font-size: 1.8rem;
+    color: crimson;
+    padding: 1rem 0;
+    font-family: 'Cinzel', serif;;
+}
+.speciality .icon-container .icon p{
+    font-size: 1rem;
+    color: #fff;
+}
+.order{
+    padding: 100px 0 50px 0;
+}
+.order .title{
+    align-items: center;
+    text-align: center;
+    font-size: 35px;
+    font-family: 'Oswald', sans-serif;
+    padding: 0 2rem;
+    padding-top: 6rem;
+    width: 90%;
+    box-shadow: 0 .2rem .02rem rgba(0,0,0,0.3);
+    margin: 0 auto 40px auto;
+}
+.order .title span{
+    color: orangered;
+    box-shadow: 0 .2rem .02rem orangered;
+}
+.order .container{
+    display: flex;
+    width: 100%;
+    text-align: center;
+    justify-content: center;
+}
+.order .box{
+    border: 2px solid #333;
+    width: 400px;
+    border-radius: 10px;
+    box-shadow: 5px 10px 10px rgba(0,0,0,0.3);
+}
+.order form{
+    align-items: center;
+    text-align: center;
+    display:flex;
+    flex-direction: column;
+}
+.order form input{
+    margin: 8px 0;
+    padding: 5px;
+    width: 300px;
+    border-radius: 5px;
+}
+.order form #name{
+    margin-top: 30px;
+}
+.order form textarea{
+    width: 300px;
+    padding: 5px;
+    margin: 8px 0;
+    border-radius: 10px;
+    resize: none;
+}
+.order form button{
+    height: 2rem;
+    margin: 10px 0 30px 0;
+    text-decoration: none;
+    font-size: 20px;
+    width: 8rem;
+    color: black;
+    background: orange;
+    border-radius: 5rem;
+    font-family: 'Rokkitt', serif;
+    transition: all 0.5s ease;
+    cursor: pointer;
+}
+.order form button:hover{
+    outline-offset: 0.4rem;
+    background: orangered;
+    font-weight: bolder;
+}
+.newsletter{
+    text-align: center;
+}
+.newsletter h1{
+    font-size: 2rem;
+    color: #222;
+    padding-bottom: 1rem;
+}
+.newsletter p{
+    font-size: 1rem;
+    color: #111;
+}
+.newsletter form{
+    margin: 1rem auto;
+    padding: 0.5rem 1rem;
+    max-width: 40rem;
+    border-radius: 5rem;
+    box-shadow: 0 .3rem .5rem rgba(0,0,0,0.3);
+    display: flex;
+    align-items: center;
+    /* background-color: #555; */
+}
+.newsletter form input[type="email"]{
+    height: 2rem;
+    font-size: 1rem;
+    padding: 0 1rem;
+    width: 100%;
+    background: none;
+    border: none;
+    color: #333;
+}
+.newsletter form input[type="submit"]{
+    height: 2rem;
+    font-size: 1rem;
+    width: 10rem;
+    padding: 0 1rem;
+    background-color: orangered;
+    border-radius: 5rem;
+    cursor: pointer;
+    border: none;
+    color: #fff;
+}
+.newsletter form input[type="submit"]:hover{
+    letter-spacing: 0.1rem;
+    opacity: 0.8;
+    color: #111;
+}
+.footer{
+    background: #2c3e50;
+}
+.footer .container{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.footer .container .box{
+    flex: 1 1 13rem;
+    margin: 2rem;
+}
+.footer .container .box h3{
+    box-shadow: 0 0.2rem 0.05rem #fff3;
+    margin-bottom: 0.5rem;
+    text-align: left;
+}
+.footer .container .box h3 span{
+    font-size: 1.5rem;
+    color: white;
+    box-shadow: 0 .2rem .02rem orangered;
+}
+.footer .container .box p{
+    color: #eee;
+    padding: 0.5rem 0;
+}
+.footer .container .box:first-child p{
+    font-size: 0.8rem;
+}
+.footer .container .box p i{
+    padding: 0 .4rem;
+}
+.footer .container .box a{
+    display: block;
+    color: #eee;
+    padding: 0.2rem 0;
+    font-size: 1rem;
+    transition: all 0.3s ease;
+}
+.footer .container .box a:hover{
+    text-decoration: underline;
+    color: crimson;
+}
+.footer .credit{
+    font-size: 1.2rem;
+    color: #fff;
+    text-align: center;
+    padding: 1rem 0;
+    border-top: .1rem solid rgba(255, 255, 255, 0.3);
+}
+.footer .credit span{
+    color: orangered;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* media query section  */
+@media(max-width: 1000px){
+    .about .container .about-container h3{
+        font-size: 25px;
+    }
+    .about .container .about-container p{
+        font-size: 16px;
+    }
+}
+@media(max-width: 950px){
+    .about .container img{
+        height: 350px;
+        width: 400px;
+    }
+    .btn{
+        font-size: 20px;
+        padding: 3px;
+    }
+    .dish .image-container .image{
+        margin: 1.5rem 1rem;
+    }
+}
+@media(max-width: 850px){
+    header nav #menu{
+        display: block;
+    }
+    header .navbar{
+        position: absolute;
+        top: 100%;
+        left: -120%;
+    }
+    header nav .navbar ul{
+        flex-flow: column;
+        justify-content: center;
+        min-height: calc(100vh - 6rem);
+        padding-bottom: 6rem;
+        background: #000;
+        width: 32rem;
+    }
+    header nav .navbar ul li{
+        text-align: center;
+        width: 100%;
+    }
+    header nav .navbar ul li a{
+        font-size: 30px;
+        display: block;
+    }
+    header nav .fa-times{
+        transform: rotate(180deg);
+    }
+    header nav .nav-toggle{
+        left: 0;
+    }
+    .home .container .title{
+        font-size: 30px;
+    }
+    .home .container .title span{
+        font-size: 30px;
+    }
+    .home .container p{
+        font-size: 16px;
+        padding: 0 60px 30px 60px;
+    }
+    .btn{
+        font-size: 20px;
+        padding: 3px;
+    }
+    
+    .about .container .about-container{
+        width: 85%;
+        margin-bottom: 20px;
+    }
+    .about .container .about-container h3{
+        font-size: 20px;
+    }
+    .about .container .about-container p{
+        font-size: 14px;
+        padding:5px;
+    }
+    .about .container img{
+        height: 300px;
+        width: 350px;
+    }
+    .btn{
+        font-size: 18px;
+        padding: 2px;
+    }
+    .dish .image-container .image img{
+        height: 200px;
+        width: 250px;
+        object-fit: cover;
+    }
+}
+@media(max-width: 730px){
+    .about .container img{
+        height: 250px;
+        width: 200px;
+    }
+    .about .container .about-container h3{
+        font-size: 18px;
+        padding-bottom: 10px;
+    }
+    .about .container .about-container p{
+        font-size: 12px;
+        padding: 0 3px;
+    }
+    .btn{
+        font-size: 15px;
+        padding: 2px;
+    }
+    .dish .image-container .image{
+        margin: 1rem 0.5rem;
+    }
+    .dish .container .buttons{
+        margin: 1rem 1rem;
+    }
+}
+@media(max-width: 550px){
+    header .header{
+        flex-flow: column;
+    }
+    header .header .logo{
+        padding-bottom: 1rem;
+    }
+    header nav .navbar ul{
+        width: 15rem;
+    }
+    .home .container .title{
+        font-size: 25px;
+    }
+    .home .container .title span{
+        font-size: 25px;
+    }
+    .home .container p{
+        font-size: 14px;
+        padding: 0 40px 30px 40px;
+    }
+    .btn{
+        font-size: 17px;
+        padding: 3px;
+    }
+    .about .container .about-container h3{
+        font-size: 20px;
+    }
+    .about .container{
+        flex-flow: column;
+    }
+    .about .container img{
+        height: 250px;
+        width: 300px;
+    }
+    .about .container .about-container p{
+        font-size: 14px;
+        padding:0 3px;
+    }
+}
